@@ -28,7 +28,8 @@
 	<target name="compile" 
 	          description="Compile Java sources and copy to WEB-INF/classes dir">
 		<javac srcdir="${src.home}"
-	          destdir="${work.home}/WEB-INF/classes" includeantruntime="yes">
+	          destdir="${work.home}/WEB-INF/classes" includeantruntime="yes"
+			  debug="on">
 			<classpath refid="master-classpath"/>
 		</javac>
 		<copy  todir="${work.home}/WEB-INF/classes">
